@@ -46,23 +46,56 @@ namespace INE_APP
         {
             Btn_confirmar.BackColor = ColorTranslator.FromHtml("#FFCCD5");
         }
+        // CADENA PARA HACER LA CONEXIÓN A LA DB
+        private string connectionString = "server=localhost;port=3306;database=ine;user=root;password=;";
+        // Método que registra una nueva cita en la tabla 'cita'
+        private bool registrar_cita(string entidad, string delegacion, string modulo,
+                                    string fecha, string tramite)
+        {
+            bool flag = false; // Indicador de éxito del registro
+                               // Se establece la conexión con la base de datos usando la cadena definida
+            using (MySqlConnection conexion = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Abre la conexión con la base de datos
+                    conexion.Open();
+                    // Consulta SQL de inserción de datos en la tabla 'cita'
+                    string consulta = @"INSERT INTO cita 
+                        (entidad, municipio, modulo, fecha, tramite) 
+                        VALUES 
+                        (@entidad, @delegacion, @modulo, @fecha, @tramite)";
+                    // Se crea un comando SQL con la consulta y la conexión activa
+                    MySqlCommand comando = new MySqlCommand(consulta, conexion);
+                    // Se añaden parámetros con los valores recibidos, para evitar inyección SQL
+                    comando.Parameters.AddWithValue("@entidad", entidad);
+                    comando.Parameters.AddWithValue("@delegacion", delegacion);
+                    comando.Parameters.AddWithValue("@modulo", modulo);
+                    comando.Parameters.AddWithValue("@fecha", fecha);
+                    comando.Parameters.AddWithValue("@tramite", tramite);
+                    // Ejecuta la consulta y devuelve cuántas filas fueron afectadas (debería ser 1)
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    // Si se insertó al menos una fila, el registro fue exitoso
+                    if (filasAfectadas > 0)
+                    {
+                        MessageBox.Show("Cita registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        flag = true; // Marca que el registro fue exitoso
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo registrar la cita.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    // Muestra un mensaje de error si ocurrió una excepción al ejecutar la consulta
+                    MessageBox.Show("Error al registrar la cita:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
+                // Devuelve true si el registro fue exitoso, false si no
+                return flag;
+            }
+        }
 
 
         private void Btn_confirmar_Click(object sender, EventArgs e)
@@ -72,7 +105,8 @@ namespace INE_APP
             {
                 DialogResult result = MessageBox.Show("¿Datos correctos?", "confirmación",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);//mensaje de confirmacion
-                if (result == DialogResult.Yes )
+                if (result == DialogResult.Yes && registrar_cita(C_entidad.Text, C_delegacion.Text, C_modulo.Text,
+         C_fecha.Text, C_tramite.Text))
                 {//al aceptar
                     MessageBox.Show("CITA AGENDADA", "Informacion",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);//mensaje de confirmacion
