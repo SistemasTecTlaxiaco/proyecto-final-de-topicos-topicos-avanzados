@@ -15,7 +15,6 @@ namespace Biblioteca_INE
         //BIBLIOTECA AÑADIDA
         //MÉTODO DE CONFIRMACIÓN DE INICIO DE SESIÓN_FORM 1
        
-
         public static bool Validar_form1(string correo, string contraseña)
         {
             bool camposNoVacios = !string.IsNullOrWhiteSpace(correo) && !string.IsNullOrWhiteSpace(contraseña);

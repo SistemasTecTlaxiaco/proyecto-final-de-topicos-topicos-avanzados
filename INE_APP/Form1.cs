@@ -93,6 +93,50 @@ namespace INE_APP
             e.Graphics.DrawString(C_correo.Text, C_correo.Font, Brushes.Black, rect);
         }
 
+// Cadena de conexión a la base de datos MySQL
+private string connectionString = "server=localhost;port=3306;database=ine;user=root;password=;";
+        // Método que valida si un usuario existe en la base de datos con nombre y contraseña correctos
+        private bool validar_usuario(string nombre, string contra)
+        {
+            bool flag = false; // Indicador para saber si el usuario fue validado correctamente
+            using (MySqlConnection conexion = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    // Abre la conexión a la base de datos
+                    conexion.Open();
+                    MessageBox.Show("Conexión exitosa a MySQL", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Consulta SQL que busca al usuario con el nombre y contraseña proporcionados
+                    string consulta = "SELECT * FROM usuario WHERE nombre = @nombre AND contraseña = @contraseña";
+                    // Se prepara el comando SQL con los parámetros para evitar inyección SQL
+                    MySqlCommand comando = new MySqlCommand(consulta, conexion);
+                    comando.Parameters.AddWithValue("@nombre", nombre);        // Se asigna el valor al parámetro @nombre
+                    comando.Parameters.AddWithValue("@contraseña", contra);    // Se asigna el valor al parámetro @contraseña
+                                                                               // Ejecuta la consulta y obtiene los resultados en un lector
+                    MySqlDataReader lector = comando.ExecuteReader();
+                    // Si se encontraron filas, significa que el usuario y contraseña son válidos
+                    if (lector.HasRows)
+                    {
+                        MessageBox.Show("Usuario encontrado. Inicio de sesión exitoso.", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        flag = true; // Se marca como verdadero para indicar éxito en la validación
+                                     // Aquí podrías abrir otro formulario si el login es exitoso
+                    }
+                    else
+                    {
+                        // Si no se encontraron registros, se muestra un mensaje de error
+                        MessageBox.Show("Correo o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    lector.Close(); // Se cierra el lector de datos
+                }
+                catch (MySqlException ex)
+                {
+                    // En caso de error al conectar o ejecutar la consulta, se muestra el mensaje de error
+                    MessageBox.Show("Error al conectar con la base de datos:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                return flag; // Se retorna true si el usuario fue validado, false si no
+            }
+        }
 
 
 
@@ -103,7 +147,7 @@ namespace INE_APP
 
 
 
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             bool datos_correctos = Clase_validaciones.Validar_form1(C_correo.Text, C_contraseña.Text);//llamado al metodo y guardado de su valor boleano
@@ -111,7 +155,8 @@ namespace INE_APP
             {
                 DialogResult result = MessageBox.Show("¿Datos correctos?", "confirmación",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question);//mensaje de confirmacion
-                if (result == DialogResult.Yes )
+                if (result == DialogResult.Yes && validar_usuario(C_correo.Text, C_contraseña.Text)
+                    )
                 {//al aceptar
                     MessageBox.Show("SESIÓN INICIADA", "Informacion",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);//mensaje de confirmacion
@@ -154,5 +199,9 @@ namespace INE_APP
                           // (el usuario puede interactuar con ambos formularios).
         }
 
+        private void Contenedor_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
