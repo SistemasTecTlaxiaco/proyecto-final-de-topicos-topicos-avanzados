@@ -1,0 +1,13 @@
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\Biblioteca_INE.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\Biblioteca_INE.pdb
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\obj\Debug\Biblioteca_INE.csproj.AssemblyReference.cache
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\obj\Debug\Biblioteca_INE.csproj.CoreCompileInputs.cache
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\obj\Debug\Biblioteca_INE.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\obj\Debug\Biblioteca_INE.pdb
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\MySql.Data.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\System.Memory.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\System.Buffers.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\bin\Debug\MySql.Data.xml
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\Biblioteca_INE\obj\Debug\Bibliote.E7CFD531.Up2Date

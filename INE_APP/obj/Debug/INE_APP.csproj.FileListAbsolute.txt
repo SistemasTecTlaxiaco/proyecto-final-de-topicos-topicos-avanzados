@@ -1,0 +1,39 @@
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\bin\Debug\INE_APP.exe.config
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\bin\Debug\INE_APP.exe
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\bin\Debug\INE_APP.pdb
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.csproj.AssemblyReference.cache
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form1.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Properties.Resources.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.csproj.GenerateResource.cache
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.csproj.CoreCompileInputs.cache
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.exe
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.pdb
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form2.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form3.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form4.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form5.resources
+C:\Users\isaia\Desktop\Topicos Avanzados de Programacion\PROYECTO\INE_APP\INE_APP\obj\Debug\INE_APP.Form6.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\INE_APP.exe.config
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\INE_APP.exe
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\INE_APP.pdb
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.csproj.AssemblyReference.cache
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form1.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form2.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form3.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form4.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form5.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Form6.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.Properties.Resources.resources
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.csproj.GenerateResource.cache
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.csproj.CoreCompileInputs.cache
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.exe
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.pdb
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\Biblioteca_INE.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\Biblioteca_INE.pdb
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\obj\Debug\INE_APP.csproj.Up2Date
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\MySql.Data.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\System.Memory.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\System.Buffers.dll
+C:\Users\isaia\source\repos\actividad-6-diseno-de-app-con-windows-form-topicos-avanzados\INE_APP\bin\Debug\MySql.Data.xml
